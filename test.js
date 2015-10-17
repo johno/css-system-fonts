@@ -1,11 +1,10 @@
-var assert = require('assert');
-var cssSystemFonts = require('..');
+import test from 'ava'
+import cssSystemFonts from './'
 
-var systemFonts = ['caption', 'icon', 'menu', 'message-box', 'small-caption', 'status-bar'];
+const systemFonts = ['caption', 'icon', 'menu', 'message-box', 'small-caption', 'status-bar']
 
-describe('css-system-fonts', function() {
+test('contains fonts', t => {
+  t.plan(1)
 
-  it('should do something awesome', function() {
-    assert.deepEqual(cssSystemFonts(), systemFonts);
-  });
-});
+  t.same(cssSystemFonts(), systemFonts)
+})

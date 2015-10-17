@@ -1,14 +1,18 @@
 {
   "name": "css-system-fonts",
   "description": "List of system fonts for CSS.",
-  "author": "John Otander",
+  "author": {
+    "name": "John Otander",
+    "email": "johnotander@gmail.com",
+    "url": "johnotander.com"
+  },
   "version": "0.0.1",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "mocha test"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -28,6 +32,6 @@
   "homepage": "https://github.com/johnotander/css-system-fonts",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*"
   }
 }
